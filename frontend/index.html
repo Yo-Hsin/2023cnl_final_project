@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Control server</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="styles.css"
+        />
+    </head>
+    <body>
+        <div class="login_container" id="login_container">
+            <div>Log in</div>
+            <input id="username" type="text" placeholder="Username"/>
+            <input id="password" type="password" placeholder="Password"/>
+            <button class="login_btn" id="login_btn">Log in</button>
+        </div>
+        <div class="menu_container" id="menu_container">
+            <div>Menu</div>
+            <button class="change_pw_btn" id="change_pw_btn">Change password</button>
+            <button class="control_btn" id="control_btn">Modify Internet available time interval</button>
+            <button class="log_out_btn" id="log_out_btn">Log out</button>
+        </div>
+        <div class="change_pw_container" id="change_pw_container">
+            <div>Change password</div>
+            <input id="ch_password" type="password" placeholder="Password"/>
+            <input id="new_password" type="password" placeholder="New password"/>
+            <button class="new_password_btn" id="new_password_btn">Change password</button>
+            <button class="pw_to_menu_btn" id="pw_to_menu_btn">Back to menu</button>
+        </div>
+        <div class="control_container" id="control_container">
+            <div>Please enter the time interval that the Internet is available for students</div>
+            <div>The format should be HHMM. E.g. 0017 or 1717</div>
+            <input id="start_time" type="start_time" placeholder="Start time">
+            <input id="end_time" type="end_time" placeholder="End time">
+            <button class="submit_btn" id="submit_btn">Submit</button>
+            <button class="time_to_menu_btn" id="time_to_menu_btn">Back to menu</button>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
